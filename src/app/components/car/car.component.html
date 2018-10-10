@@ -1,0 +1,45 @@
+<hr>
+<button (click)="smile()">smile</button>
+
+
+<h3>Edit Vehicle</h3>
+
+<form *ngIf="isEditing" class="edit-vehicle">
+  <div class="form-group">
+    <label for="year">year: </label>
+    <input type="text" [(ngModel)]="year" name="year">
+  </div>
+  <div class="form-group">
+    <label for="model">model: </label>
+    <input type="text" [(ngModel)]="model" name="model">
+  </div>
+  <div class="form-group">
+    <label for="make">make: </label>
+    <input type="text" [(ngModel)]="make" name="make">
+  </div>
+</form>
+
+<div class="vehicleInfo">
+  <h3>Vehicle info:</h3>
+  <ul>
+    <li>smiles: {{smiles.length}} </li>
+    <li>year: {{this.year}}</li>
+    <li>make: {{make}}</li>
+    <li>model: {{model}}</li>
+    <li>Features:
+      <ul>
+        <li *ngFor="let f of features; let idx=index">{{f}}</li>
+      </ul>
+    </li>
+    <li *ngIf="features.length>0">Has Features: yes </li>
+    <li *ngIf="features.length==0">Has Features: no </li>
+  </ul>
+  <button (click)="editVehicle()">Edit Vehicle</button>
+
+  <form (submit)="addFeature(feature_new.value)">
+    <div>
+      <label for="feature">Feature </label><br>
+      <input type="text" #feature_new><br>
+    </div>
+  </form>
+</div>

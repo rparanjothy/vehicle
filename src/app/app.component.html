@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="header">
+  <h1>
+    {{ title }}! <br>
+
+  </h1>
+</div>
+
+<div *ngIf="showMessage" class="message">
+  <h2> Message is {{message}} </h2>
+</div>
+
+<div class="nav">
+  <ul>
+    <li><a routerLink="/">Vehicle</a></li>
+    <li><a routerLink="/author">Author</a></li>
+    <li><a routerLink="/godword">Motivate</a></li>
+
+
+  </ul>
+
+</div>
+<router-outlet> </router-outlet>
+
+<!-- <div><app-car></app-car></div>
+<div><app-author></app-author></div> -->

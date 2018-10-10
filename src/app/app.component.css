@@ -1,0 +1,58 @@
+h1{
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+h2{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 10px;
+    font-weight:10
+}
+
+.message{
+   background-color: rgb(202, 202, 202);
+
+    border: 2px solid rgb(202, 202, 202);
+    border-radius:40px;
+}
+
+.header{
+    
+    /* text-align: center; */
+    min-width:80%;
+    background-color: rgb(182, 182, 182);
+    font-family: Arial, Helvetica, sans-serif;
+    margin:auto;
+    padding:10px;
+}
+
+.nav{
+    min-width: 80%;
+    background-color: rgb(192, 192, 192);
+    padding:10px;
+    
+}
+
+.nav ul {
+  list-style: none;
+  text-align: center}
+
+.nav li{
+    display: inline;
+    padding: 10px;   
+}
+
+.nav a{
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
+
+.nav a:hover{
+   /* color:pink; */
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-weight: bolder;
+   
+    
+}

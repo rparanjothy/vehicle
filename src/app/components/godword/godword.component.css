@@ -1,0 +1,25 @@
+h3 {
+  font-size: 20px;
+  color: rgb(80, 60, 60);
+  padding: 10px;
+}
+
+.section-1 {
+  min-height: 50px;
+  width: 80%;
+  background-color:#f4f4f4;
+  text-align: center;
+  box-sizing: border-box;
+  float: left;
+  border: 1px dotted black;
+}
+
+.section-2 {
+    min-height: 50px;
+    width: 20%;
+    background-color:#f4f4f4;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+  }
+  
