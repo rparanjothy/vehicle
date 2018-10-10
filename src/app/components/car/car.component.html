@@ -28,7 +28,10 @@
     <li>model: {{model}}</li>
     <li>Features:
       <ul>
-        <li *ngFor="let f of features; let idx=index">{{f}}</li>
+        <li *ngFor="let f of features; let idx=index; trackBy:trackByFn" (dblclick)="editFeature(f)">{{f}} <div *ngIf="isFeatEdit">
+            <form (submit)=editFeature(0)><input type="text" [(ngModel)]="features[idx]" name="feature"></form>
+          </div>
+        </li>
       </ul>
     </li>
     <li *ngIf="features.length>0">Has Features: yes </li>

@@ -12,6 +12,7 @@ export class CarComponent implements OnInit {
   smiles: string[];
   features: string[];
   isEditing: boolean;
+  isFeatEdit:boolean;
   constructor() {
     console.log("Car Component constructor..");
   }
@@ -25,6 +26,7 @@ export class CarComponent implements OnInit {
     this.features = ["Twin A/C", "SH-AWD", "11-speakers", "V6"];
     console.log(this);
     this.isEditing = false;
+    this.isFeatEdit=false;
   }
 
   smile() {
@@ -42,4 +44,14 @@ export class CarComponent implements OnInit {
   editVehicle() {
     this.isEditing = !this.isEditing;
   }
+
+editFeature(f) {
+    console.log(f);
+    this.isFeatEdit=!this.isFeatEdit;
+
+  }
+
+  trackByFn(index: any, item: any) {
+    return index;
+ }
 }
